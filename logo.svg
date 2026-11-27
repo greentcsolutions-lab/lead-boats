@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="lb-title">
+  <title id="lb-title">lead.boats</title>
+  <rect width="512" height="512" rx="112" fill="#0B2545"/>
+  <g transform="translate(0,-10)">
+    <rect x="250" y="66" width="12" height="274" rx="6" fill="#DCE9F5"/>
+    <polygon points="268,80 268,318 404,318" fill="#FFFFFF"/>
+    <polygon points="244,132 244,318 124,318" fill="#8DD3F7"/>
+    <path d="M96 338H416L386 394Q381 402 372 402H140Q131 402 126 394Z" fill="#FF7A45"/>
+    <path d="M104 444q38-28 76 0t76 0t76 0t76 0" fill="none" stroke="#3FA7D6" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
