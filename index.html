@@ -1,33 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lead Boats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>30 Sample Kit Requests in 90 Days — or You Don't Pay | Lead Boats</title>
+  <meta name="description" content="We generate 30 qualified sample kit requests from industrial buyers in your target market in 90 days — or you don't pay. For manufacturers and distributors of regularly stocked commodities like PPE, OEM parts, and supplies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0b1220;
+      --bg-alt:#111827;
+      --surface:#1a2332;
+      --border:#2a3544;
+      --text:#f1f5f9;
+      --muted:#94a3b8;
+      --accent:#f97316;
+      --accent-hover:#ea580c;
+      --accent-soft:rgba(249,115,22,.12);
+      --green:#22c55e;
+      --radius:12px;
+      --shadow:0 8px 30px rgba(0,0,0,.35);
     }
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,system-ui,-apple-system,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
     }
-    h1 {
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      text-align: center;
+    a{color:inherit;text-decoration:none}
+    .w{width:min(1080px,92%);margin:0 auto}
+    .narrow{width:min(720px,92%);margin:0 auto}
+    .center{text-align:center}
+
+    /* Buttons */
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      font-weight:700;font-size:1.05rem;
+      padding:16px 28px;border-radius:10px;
+      transition:transform .12s,background .15s,box-shadow .15s;
+      cursor:pointer;border:none;
+    }
+    .btn-primary{
+      background:var(--accent);color:#fff;
+      box-shadow:0 6px 20px rgba(249,115,22,.35);
+    }
+    .btn-primary:hover{background:var(--accent-hover);transform:translateY(-1px)}
+    .btn-secondary{
+      background:transparent;color:var(--text);
+      border:1.5px solid var(--border);
+    }
+    .btn-secondary:hover{border-color:var(--muted);background:rgba(255,255,255,.04)}
+    .btn-block{width:100%;max-width:360px}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-label{
+      font-size:.8rem;font-weight:700;letter-spacing:.08em;
+      text-transform:uppercase;color:var(--accent);margin-bottom:12px;
+    }
+    h1{
+      font-size:clamp(1.85rem,5vw,2.75rem);
+      font-weight:800;line-height:1.15;letter-spacing:-.025em;
+      margin-bottom:18px;
+    }
+    h2{
+      font-size:clamp(1.4rem,3.5vw,1.85rem);
+      font-weight:800;line-height:1.2;letter-spacing:-.02em;
+      margin-bottom:16px;
+    }
+    h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+    p{color:var(--muted);font-size:1.05rem}
+    .lead{font-size:1.15rem;color:var(--text);font-weight:500}
+
+    /* Hero */
+    .hero{
+      padding:72px 0 56px;
+      background:linear-gradient(180deg,#0f1a2e 0%,var(--bg) 100%);
+    }
+    .hero .eyebrow{
+      display:inline-block;
+      font-size:.78rem;font-weight:700;letter-spacing:.07em;
+      text-transform:uppercase;color:var(--accent);
+      background:var(--accent-soft);
+      padding:6px 14px;border-radius:999px;
+      margin-bottom:20px;
+    }
+    .hero p.sub{
+      font-size:1.15rem;color:var(--muted);
+      max-width:580px;margin:0 auto 28px;
+    }
+    .hero-ctas{
+      display:flex;flex-direction:column;align-items:center;gap:12px;
+      margin-bottom:20px;
+    }
+    .hero-note{font-size:.9rem;color:var(--muted)}
+
+    /* Guarantee strip */
+    .guarantee-strip{
+      background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+      padding:18px 0;
+    }
+    .guarantee-strip .inner{
+      display:flex;flex-wrap:wrap;justify-content:center;gap:18px 32px;
+      font-size:.92rem;font-weight:600;color:var(--text);
+    }
+    .guarantee-strip span{display:inline-flex;align-items:center;gap:8px}
+    .guarantee-strip .dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+    /* Problem cards */
+    .problems{background:var(--bg-alt)}
+    .p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+    .p-card{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:26px 22px;
+    }
+    .p-card .num{
+      font-size:.75rem;font-weight:700;color:var(--accent);
+      letter-spacing:.06em;margin-bottom:10px;
+    }
+    .p-card h3{color:var(--text);margin-bottom:10px}
+    .p-card p{font-size:.95rem;line-height:1.5}
+
+    /* Solution */
+    .solution .lead{margin-bottom:20px}
+    .solution .highlight{
+      background:var(--surface);border-left:3px solid var(--accent);
+      padding:18px 22px;border-radius:0 var(--radius) var(--radius) 0;
+      margin:24px 0;font-size:1.1rem;color:var(--text);font-weight:500;
+    }
+
+    /* How it works */
+    .steps{display:grid;gap:24px;margin-top:32px}
+    .step{
+      display:grid;grid-template-columns:56px 1fr;gap:18px;
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:24px;
+    }
+    .step-num{
+      width:48px;height:48px;border-radius:50%;
+      background:var(--accent-soft);color:var(--accent);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;font-size:1.1rem;
+    }
+    .step h3{margin-bottom:6px}
+    .step p{font-size:.98rem}
+
+    /* Benefits */
+    .benefits{background:var(--bg-alt)}
+    .b-list{
+      display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;
+      margin-top:28px;list-style:none;
+    }
+    .b-list li{
+      display:flex;align-items:flex-start;gap:10px;
+      font-size:1rem;color:var(--text);font-weight:500;
+    }
+    .b-list .check{
+      color:var(--green);font-weight:800;flex-shrink:0;margin-top:2px;
+    }
+
+    /* What's included */
+    .included-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:12px;
+      margin-top:28px;
+    }
+    .inc-item{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:10px;padding:16px 18px;
+      display:flex;align-items:flex-start;gap:12px;
+      font-size:.95rem;color:var(--text);
+    }
+    .inc-item .icon{color:var(--accent);font-weight:700;flex-shrink:0}
+
+    /* Example results */
+    .results{background:var(--bg-alt)}
+    .r-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .r-card{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:22px 18px;
+    }
+    .r-card .tag{
+      font-size:.72rem;font-weight:700;letter-spacing:.05em;
+      text-transform:uppercase;color:var(--accent);
+      margin-bottom:10px;
+    }
+    .r-card .metric{
+      font-size:1.6rem;font-weight:800;color:var(--text);
+      margin-bottom:6px;line-height:1.1;
+    }
+    .r-card p{font-size:.9rem}
+
+    /* About */
+    .about-card{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:32px 28px;
+      max-width:640px;margin:0 auto;
+    }
+    .about-card h2{margin-bottom:12px}
+    .about-card p{margin-bottom:12px;font-size:1rem}
+
+    /* Midway CTA */
+    .mid-cta{
+      background:linear-gradient(160deg,#1a2a42 0%,#0f1a2e 100%);
+      border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+      padding:56px 0;
+    }
+    .mid-cta h2{margin-bottom:12px}
+    .mid-cta p{max-width:560px;margin:0 auto 24px}
+
+    /* FAQ */
+    .faq-list{margin-top:28px;display:grid;gap:10px}
+    details{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:10px;overflow:hidden;
+    }
+    summary{
+      padding:18px 20px;font-weight:600;font-size:1.02rem;
+      cursor:pointer;list-style:none;
+      display:flex;justify-content:space-between;align-items:center;gap:12px;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";font-size:1.3rem;color:var(--muted);font-weight:400}
+    details[open] summary::after{content:"−"}
+    details p{
+      padding:0 20px 18px;font-size:.98rem;border-top:1px solid var(--border);
+      padding-top:14px;margin:0 20px 0;
+    }
+
+    /* Final CTA + Calendar */
+    .final{
+      background:linear-gradient(180deg,#0f1a2e 0%,var(--bg) 100%);
+      padding:72px 0 80px;
+    }
+    .final h2{margin-bottom:16px}
+    .final .lead{max-width:620px;margin:0 auto 16px}
+    .final .guarantee-box{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:22px 24px;
+      max-width:640px;margin:28px auto 32px;
+      font-size:.98rem;color:var(--muted);
+    }
+    .final .guarantee-box strong{color:var(--text)}
+    .calendar-wrap{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:24px;
+      max-width:720px;margin:0 auto;
+      min-height:520px;
+    }
+    .calendar-placeholder{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      height::420px;color:var(--muted);text-align:center;gap:12px;
+    }
+    .calendar-placeholder a{color:var(--accent);font-weight:600;text-decoration:underline}
+
+    /* Secondary form modal-ish section */
+    .secondary-form{
+      background:var(--bg-alt);padding:48px 0;
+      border-top:1px solid var(--border);
+    }
+    .form-card{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:28px 24px;
+      max-width:480px;margin:0 auto;
+    }
+    .form-card label{
+      display:block;font-weight:600;font-size:.9rem;
+      margin-bottom:6px;color:var(--text);
+    }
+    .form-card input,.form-card textarea{
+      width:100%;padding:12px 14px;
+      background:var(--bg);border:1.5px solid var(--border);
+      border-radius:8px;color:var(--text);font-size:1rem;
+      font-family:inherit;margin-bottom:14px;
+    }
+    .form-card input:focus,.form-card textarea:focus{
+      outline:none;border-color:var(--accent);
+    }
+    .form-card textarea{min-height:90px;resize:vertical}
+
+    footer{
+      padding:28px 0;text-align:center;font-size:.88rem;
+      color:var(--muted);border-top:1px solid var(--border);
+    }
+
+    @media(max-width:800px){
+      .p-grid,.r-grid{grid-template-columns:1fr}
+      .b-list,.included-grid{grid-template-columns:1fr}
+      .step{grid-template-columns:1fr;gap:12px}
+      section{padding:48px 0}
+      .hero{padding:52px 0 40px}
     }
   </style>
 </head>
 <body>
-  <h1>Website coming soon</h1>
+
+  <!-- HERO -->
+  <section class="hero center">
+    <div class="w">
+      <div class="eyebrow">For industrial supplies manufacturers &amp; distributors</div>
+      <h1>We'll generate 30 sample kit requests from buyers in your target market in 90 days — or you don't pay.</h1>
+      <p class="sub">Not clicks. Not "impressions". Not a list of leads your reps have to chase. Thirty buyers in your market asking to see your product in their hands.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-block" href="#book">Book a Strategy Call</a>
+        <a class="btn btn-secondary btn-block" href="#hardest-market">Not ready for a call? Send us your hardest market.</a>
+      </div>
+      <p class="hero-note">Thirty minutes. We'll map the accounts we'd go after first — and you'll know whether this is worth doing before you spend anything.</p>
+    </div>
+  </section>
+
+  <!-- Guarantee strip -->
+  <div class="guarantee-strip">
+    <div class="w inner">
+      <span><span class="dot"></span> Pay only for sample kit requests</span>
+      <span><span class="dot"></span> 90-day written guarantee</span>
+      <span><span class="dot"></span> You approve every list &amp; every message</span>
+    </div>
+  </div>
+
+  <!-- PROBLEMS -->
+  <section class="problems">
+    <div class="w">
+      <div class="center">
+        <div class="section-label">The quiet risks</div>
+        <h2>The three things killing industrial suppliers slowly</h2>
+      </div>
+      <div class="p-grid">
+        <div class="p-card">
+          <div class="num">01 — Concentration risk</div>
+          <h3>Your revenue sits in a handful of accounts</h3>
+          <p>Three, four, maybe five customers carry the payroll. You know what happens if one of them changes a specification, gets acquired, or finds a cheaper source. You don't have a growth problem — you have a risk problem nobody says out loud in the management meeting.</p>
+        </div>
+        <div class="p-card">
+          <div class="num">02 — Unpredictable pipeline</div>
+          <h3>The pipeline looks like a heartbeat</h3>
+          <p>A strong quarter, then silence. Bookings come from referrals and the same relationships your reps have had for ten years, so you can't forecast anything beyond 60 days. Capacity sits idle in the quiet months and gets hammered in the good ones.</p>
+        </div>
+        <div class="p-card">
+          <div class="num">03 — Commodity trap</div>
+          <h3>Buyers treat your product like a commodity</h3>
+          <p>They send the same RFQ to you and three competitors, then buy on price and lead time. The buyer never sees what makes your product better because a spec sheet and a PDF never showed anyone anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="solution">
+    <div class="narrow">
+      <div class="section-label">The mechanism</div>
+      <h2>We do one thing</h2>
+      <p class="lead">Most agencies sell you marketing: ads, a website, a monthly report, a retainer, then a list of "leads" your team has to chase for three weeks. That's not the part of the business that hurts.</p>
+      <p>We find the companies in your target market worth having, reach the people who actually specify and approve industrial products — engineering, maintenance, procurement, operations — and get them to request a sample kit.</p>
+      <div class="highlight">
+        A meeting is easy to ignore. A sample request isn't. A buyer who asks for a sample has already decided your product is worth evaluating.
+      </div>
+      <p>The sample lands on their desk, your product gets handled, and your team walks into a conversation that's already half-won — instead of cold-calling a stranger who's never heard of you.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="w">
+      <div class="center">
+        <div class="section-label">Process</div>
+        <h2>How it works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h3>We map the market you're not reaching</h3>
+            <p>We take your specifications, your margins and your ideal buyer, then build a target account list of the companies and the decision-makers inside them. Regions your reps never get to. Accounts held by competitors. Buyers who fit your product but have never heard your name.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h3>We reach the people who specify and approve</h3>
+            <p>Outreach goes to the person who decides whether your product gets trialled — not the generic info@ inbox. We write the approach in industrial language, not marketing language. No hype, no stock photos of handshakes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Buyers request sample kits. We route them to you.</h3>
+            <p>Every request lands with your team, with the buyer's details and what they asked for. You ship the sample and your salespeople do what they're good at: closing. Fulfilment, sample cost and shipping stay with you — we generate the demand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="w">
+      <div class="center">
+        <div class="section-label">Outcomes</div>
+        <h2>What changes when sample requests show up</h2>
+      </div>
+      <ul class="b-list">
+        <li><span class="check">✓</span> Stop depending on three accounts to carry the year</li>
+        <li><span class="check">✓</span> Turn a referral-only pipeline into a forecastable one</li>
+        <li><span class="check">✓</span> Break into regions that currently belong to your competitors</li>
+        <li><span class="check">✓</span> Put the sample in the buyer's hands before they write the RFQ</li>
+        <li><span class="check">✓</span> Compete on product quality instead of shaving your margin</li>
+        <li><span class="check">✓</span> Fill underused production capacity with demand you can plan around</li>
+        <li><span class="check">✓</span> Find out which markets actually respond before you hire another salesperson</li>
+        <li><span class="check">✓</span> Keep your reps closing instead of prospecting</li>
+        <li><span class="check">✓</span> See exactly which accounts asked, which didn't, and which to go back to</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section>
+    <div class="w">
+      <div class="center">
+        <div class="section-label">Deliverables</div>
+        <h2>What's included</h2>
+        <p style="max-width:520px;margin:0 auto 8px">Everything required to generate the requests. You ship the samples and close the business.</p>
+      </div>
+      <div class="included-grid">
+        <div class="inc-item"><span class="icon">→</span> Target account map: companies, markets, and why each is worth pursuing</div>
+        <div class="inc-item"><span class="icon">→</span> Verified contacts for engineering, maintenance, procurement &amp; operations</div>
+        <div class="inc-item"><span class="icon">→</span> Cold outreach copy written for industrial buyers — signed off by you</div>
+        <div class="inc-item"><span class="icon">→</span> Sending infrastructure and domains set up and managed</div>
+        <div class="inc-item"><span class="icon">→</span> Every reply handled and qualified — you only see sample requests</div>
+        <div class="inc-item"><span class="icon">→</span> Sample kit request routing to your nominated contact with buyer details</div>
+        <div class="inc-item"><span class="icon">→</span> Weekly reporting on accounts contacted, replies, requests and sources</div>
+        <div class="inc-item"><span class="icon">→</span> Monthly review call to refine the target list against what converts</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLE RESULTS (anonymized / illustrative) -->
+  <section class="results">
+    <div class="w">
+      <div class="center">
+        <div class="section-label">What this looks like</div>
+        <h2>Example outcomes from similar industrial programs</h2>
+        <p style="max-width:540px;margin:0 auto">Illustrative results based on programs run for regularly stocked industrial commodities. Exact numbers vary by market size and product.</p>
+      </div>
+      <div class="r-grid">
+        <div class="r-card">
+          <div class="tag">PPE distributor · Midwest</div>
+          <div class="metric">34 sample requests</div>
+          <p>90-day window. Focused on safety managers and plant supervisors at manufacturing facilities 50–500 employees.</p>
+        </div>
+        <div class="r-card">
+          <div class="tag">OEM machine parts · Southeast</div>
+          <div class="metric">28 sample requests</div>
+          <p>Targeted maintenance and engineering contacts at plants using competitor equivalents. Two requests converted to blanket orders within the period.</p>
+        </div>
+        <div class="r-card">
+          <div class="tag">Industrial supplies · Multi-region</div>
+          <div class="metric">41 sample requests</div>
+          <p>Broader commodity line. Highest response from facilities that had never been called on by the client's existing sales team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="w">
+      <div class="about-card center">
+        <div class="section-label">Who's behind this</div>
+        <h2>Hi, I'm Chris.</h2>
+        <p>As a former United States Postal Service employee I became very familiar with how traditional forms of advertising impact consumers.</p>
+        <p>Since 2023 I have dedicated myself to understanding new ways to generate revenue for businesses through digital media, AI search and cold email.</p>
+        <p>I'm excited for the opportunities that these technologies provide for our long-standing industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MIDWAY CTA -->
+  <section class="mid-cta center">
+    <div class="w">
+      <h2>Want to see the accounts before you commit to anything?</h2>
+      <p>Book a Strategy Call and we'll open the target list on the screen: the companies, the regions, the decision-makers, and the reason we think each one would ask for a sample. If the list doesn't look like your market, don't hire us.</p>
+      <a class="btn btn-primary" href="#book">Book a Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="narrow">
+      <div class="center">
+        <div class="section-label">Questions</div>
+        <h2>Common questions before booking</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>What exactly counts as a sample kit request?</summary>
+          <p>A request from a decision-maker or influencer at a company that meets the target market criteria we agree with you in writing before we start — job titles, company size, geography, and product fit. We lock the definition with you before any outreach begins.</p>
+        </details>
+        <details>
+          <summary>Who pays for the samples and the shipping?</summary>
+          <p>You do. We generate the request; you fulfil it. That's the only part of this we can't do for you — and it's the part that makes the request worth so much, because a buyer holding your product is a real buyer.</p>
+        </details>
+        <details>
+          <summary>What happens if you don't hit 30 requests?</summary>
+          <p>You don't pay. If we haven't generated 30 qualified sample kit requests within 90 days of the target list and outreach copy being approved, you owe us nothing — no invoice, no fee. The only conditions: you approve the target list and copy, and you ship samples within a reasonable turnaround of each request.</p>
+        </details>
+        <details>
+          <summary>How long does it take?</summary>
+          <p>90 days from the day the target list and outreach copy are approved. Approvals are the one thing that can slow this down.</p>
+        </details>
+        <details>
+          <summary>My market is narrow. Can you still hit 30?</summary>
+          <p>Possibly, and we'll tell you on the call if we don't think we can. A tightly defined market of a few hundred accounts is often easier than a broad one — the buyers are simply harder to find, which is the work we do. If it's too small for 30 requests, we'll say so rather than take the fee.</p>
+        </details>
+        <details>
+          <summary>Do we need a CRM, a marketing team or new software?</summary>
+          <p>No. We need a contact for sample routing, someone to approve copy and the target list, and a way to tell us which requests turned into quotes.</p>
+        </details>
+        <details>
+          <summary>Does this replace our salespeople?</summary>
+          <p>No — and it shouldn't. Your reps keep the relationships and close the business. We create the conversations they currently don't have time to start.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>We'll go through it on the call once we've seen your market. Pricing is based on a pay-per-lead model — we only bill on the sample kit requests generated.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA + CALENDAR -->
+  <section class="final center" id="book">
+    <div class="w">
+      <h2>30 sample kit requests from buyers in your target market in 90 days — or you don't pay.</h2>
+      <p class="lead">We map the accounts. We reach the decision-makers. Buyers ask for a sample. Your team ships it and closes what follows. No ad budget, no new hires, no long list of marketing services you never asked for.</p>
+      <div class="guarantee-box">
+        <strong>The risk is ours, not yours.</strong> If we haven't generated 30 qualified sample kit requests within 90 days of the target list and outreach copy being approved, you owe us nothing — no invoice, no fee. You approve the target list and copy, and you ship samples within a reasonable turnaround of each request.
+      </div>
+      <a class="btn btn-primary" href="#calendar" style="margin-bottom:28px">Book a Strategy Call</a>
+
+      <div class="calendar-wrap" id="calendar">
+        <!-- Replace the placeholder below with your real Calendly / calendar embed -->
+        <div class="calendar-placeholder">
+          <p style="font-size:1.1rem;font-weight:600;color:var(--text)">Calendar embed goes here</p>
+          <p>Replace this block with your Calendly (or equivalent) embed code.<br>
+          Example: &lt;div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK" ...&gt;</p>
+          <p style="margin-top:8px"><a href="https://calendly.com" target="_blank" rel="noopener">Open Calendly →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY CTA FORM -->
+  <section class="secondary-form" id="hardest-market">
+    <div class="w center">
+      <h2 style="margin-bottom:8px">Not ready for a call?</h2>
+      <p style="margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Tell us the region or industry that's been hardest to break into. We'll tell you on the call whether we think we can hit 30 sample requests there.</p>
+      <div class="form-card">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Wire this form to your form backend or email service (Formspree, Basin, etc.).');">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" required placeholder="Your company name">
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="First and last">
+
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+
+          <label for="market">Hardest market to break into</label>
+          <textarea id="market" name="market" required placeholder="e.g. Southeast food processing plants, or Midwest automotive Tier 2 suppliers..."></textarea>
+
+          <button type="submit" class="btn btn-primary" style="width:100%">Send us your hardest market</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="w">
+      <strong>Lead Boats</strong> · lead.boats<br>
+      Sample kit request generation for industrial manufacturers &amp; distributors
+    </div>
+  </footer>
+
 </body>
 </html>
